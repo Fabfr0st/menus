@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Akshar", sans-serif;
+    src: url("../font/Akshar/Akshar-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+#menuPrincipal,
+#navPrincipal {
+    display: flex;
+    align-items: center;
+    background-color: rgba(176, 185, 206, 0.7);
+}
+
+#menuPrincipal {
+    /* border:  1px solid red; */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.5s;
+}
+
+.transLeft {
+    transform: translateX(-110%)
+}
+
+#menuPrincipal>li {
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+.fa-record-vinyl {
+    padding: 0 1rem 0 1rem;
+}
+
+#menuPrincipal a {
+    font-family: "Akshar", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#burger {
+    padding: 1rem;
+}
+
+#navPrincipal {
+    justify-content: space-between;
+}
+
+@media screen and (min-Width:576px) {
+    #burger {
+        display: none;
+    }
+    #menuPrincipal {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        transform: translateX(0)
+    }
+}
