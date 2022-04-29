@@ -3,10 +3,6 @@
     src: url("../font/Akshar/Akshar-VariableFont_wght.ttf");
 }
 
-body {
-    margin: 0;
-}
-
 #menuPrincipal,
 #navPrincipal {
     display: flex;
